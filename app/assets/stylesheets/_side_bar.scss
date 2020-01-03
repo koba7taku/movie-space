@@ -1,0 +1,67 @@
+
+
+
+.side-bar{
+  float: left;
+  height: 100vh;
+  width: 300px;
+  background-color: skyblue;
+  
+  &__user-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    background-color: white;
+    
+    &__top-items{
+      height: 35px;
+      width: 260px;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      
+      
+      &__name{
+        font-family: "arial black";
+        font-size: 25px;
+        color: gold;
+      }
+
+      &__icons{
+        width: 25%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 30px; 
+        a {
+          color: beige;
+           }
+      }
+    }
+  }
+  &__group-list{
+    height: calc(100vh - 100px);
+
+    &__message{
+      height: 91px;
+      background-color: honeydew;
+      position: relative;
+
+      &__group{
+        font-family: "arial black";
+        font-size: 20px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+      
+      &__title{
+        font-family: "arial black";
+        font-size: 13px;
+        position: absolute;
+        top: 50px;
+        left: 20px;
+      }
+    }
+  }
+}

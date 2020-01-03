@@ -1,0 +1,131 @@
+.chat-main{
+  float: left;
+  height: 100vh;
+  width: calc(100vw - 300px);
+  background-color: whitesmoke;
+  &__group-info{
+    height: 100px;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+    &__group-name{
+      font-family: "arial black";
+      font-size: 22px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      }
+    &__member{
+      position: absolute;
+      left: 20px;
+      bottom: 5px;
+      font-family: "arial black";
+      font-size: 15px;
+      
+
+      
+    }
+    
+    &__edit{
+      margin-right: 50px;
+      height: 45px;
+      width: 75px;
+      background-color: khaki;
+      padding: 6px 11px;
+      &__btn{
+        color: orange;
+        font-family: "arial black";
+        font-size: 23px;
+        text-decoration: none;
+      }
+      
+    }
+  
+}
+
+  &__message-list__group{
+    height: calc(100% - 100px - 90px);
+    
+    &__message{
+      
+      &__s{
+        display: flex;
+        
+        &__name{
+          font-family: "arial black";
+          font-size: 22px;
+          padding: 20px;
+        }
+        &__time{
+          font-family: "arial black";
+          font-size: 14px;
+          padding-top: 27px;
+        }
+        }
+      &__text{
+        display: block;
+        font-family: "arial black";
+        font-size: 18px;
+        
+        padding-left: 20px;
+        // margin-bottom: 0px;
+      }
+    }
+  }
+  &__message-form{ 
+    height: 90px;
+    background-color: lightsalmon;
+    position: relative;
+    
+    &__type{
+      height: 55px;
+      width: calc(100% - 50px);
+      // background-color: rebeccapurple;
+      position: absolute;
+      margin: 20px ;
+      &__text{
+        height: 55px;
+        width: calc(100% - 135px);
+        background-color: cornsilk;
+        position: relative;
+        float: left;
+        
+      }
+        &__image{
+          position: absolute;
+          float: left;
+          top: 7px;
+          right: 20px;
+          font-size: 30px;
+          
+          i {
+            color: blue;
+            
+             }
+          input{
+            display: none;
+          }   
+        }
+      &__send{
+        position: absolute;
+        top: 0px;
+        right: 20px;
+        height: 55px;
+        width: 80px;
+        background-color: khaki;
+        padding-top: 10px;
+        padding-left: 9px;
+        
+        &__btn{
+          color: orange;
+          font-family: "arial black";
+          font-size: 22px;
+          text-decoration: none;
+        }
+        
+      }   
+    }
+  }
+}
